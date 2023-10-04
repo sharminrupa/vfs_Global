@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{ 
+    margin: 0;
+    padding: 0;
+    font-size: 16px;      
+}
+
+.top-logo{
+    border-bottom: 1px solid rgb(218, 216, 216);
+}
+
+.menu{
+    height: 54px;    
+}
+
+.menu-container{
+    border-bottom: 1px solid rgb(218, 216, 216);
+}
+
+.menu .navbar-nav>li a{
+    margin-top: 3px;
+    color: #96a6a7;
+    text-transform: uppercase;
+	
+}
+.menu .navbar-nav>li a:hover{
+    margin-top: 3px;
+    color: #96a6a7;
+    text-transform: uppercase;
+	border-bottom: 4px solid green;
+	clear: both;
+    
+}
+
+/* ------------- main content start -------------- */
+
+.main-contant{
+    width: 100%;
+    min-height: 300px;
+    background-repeat: no-repeat;
+	background-image: url(../images/main.jpg);
+    background-size: 100%;
+    margin-top: 4px;
+}
+
+/* ------------- main content end -------------- */
+
+.vista-btn{
+    background-color: orangered;
+    border: none;
+    width: 100%;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    
+    
+}
+
+.card-design{
+  margin-top: -80px;
+}
+
+
+
+.breadcrumb ul {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.breadcrumb ul li{
+text-decoration: none;
+}
+
+.breadcrumb li:not(:last-child)::after {
+display: inline-block;
+margin: 0 .25rem;
+font-weight: 800;
+content: "→";
+
+}
+/* 
+.text-Breadcrumb-apply a{
+color: #FFF;
+font-weight: bold;
+} */
+
+.text-Breadcrumb-home a{
+color: rgb(7, 7, 7);
+}
+
+
+/* ------------ tab css start----------- */
+
+.mytabs {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+margin: 10px auto;    
+}
+.mytabs input[type="radio"] {
+
+display: none;
+}
+.mytabs label {
+padding: 5px 5px;
+font-weight: bold;
+
+}
+
+.mytabs label:hover{
+    border-bottom: 4px solid green;
+	clear: both;
+    
+}
+
+.mytabs .tab {
+width: 100%;
+padding: 10px 0px;
+background: #fff;
+order: 1;
+display: none;
+border-top: 1px solid rgb(218, 216, 216);
+}
+.mytabs .tab h2 {
+font-size: 3em;
+
+}
+
+
+.apply-information{
+    padding: 25px 30px;
+    border-bottom: 1px solid rgb(218, 216, 216);
+    }
+    
+.apply-number{
+      margin-right: 20px;
+      color: #ffa500;
+    }
+
+.mytabs input[type='radio']:checked + label + .tab {
+display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+background: #fff;
+}
+
+.apply-view{
+    color: orange;
+    background-color: #fff;
+    border-color: #fff;
+    border-right: #fff;
+    border-bottom: #fff;
+    border-top: #fff;
+    border-left: #fff;
+    box-sizing: border-box;
+   }
+
+   .breadcrumb-text{
+    color:#fff;
+   }
+
+   .book-style{
+    text-decoration: none;
+    color: #fff;
+   }
+/* ------------ tab css end----------- */
+/* -------------- Sign form start------------ */
+.signin-form{
+border: 1px solid rgb(209, 208, 208);
+}
+.captha {
+width: 70%;
+height: 80%;
+background: #F4F4F4;border: solid 1px #d5d5d5;padding: 15px 22px;
+}
+.form-check .form-check-label {
+display: inline-flex;
+font-size: 14px;
+}
+/* .form-check p {
+margin-top: 8px;
+padding-right: 2px;
+}
+#captha-image {
+margin-left: 10px;
+} */
+.buton-form a {
+background: #01478c;
+position: absolute;
+right: 0;
+padding: 14px 51px;
+bottom: 47px;
+font-size: 16px;
+color: white;
+font-weight: 600;
+border-radius: 5px;
+border: solid 1px transparent;
+transition: all ease-in 0.5s;
+
+}
+/* .buton-form a:hover {
+background: #F4F4F4;
+} */
+.form-check-label {
+display: block;
+position: relative;
+padding-left: 35px;
+
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.form-check-label input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+.checkmark {
+position: absolute;
+top: 0px;
+left: 0;
+height: 20px;
+width: 20px;
+background-color: white;
+border: solid 1px #e4dccc;
+}
+/* .form-check-label:hover input ~ .checkmark {
+background-color: #01478C;
+} */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.form-check-label input:checked ~ .checkmark:after {
+display: block;
+}
+.form-check-label .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+/* .contact-text.text-center h6 {
+margin-bottom: 60px;
+} */
+.capcta {
+width: 12%;
+height: 12%;	
+padding: 0px;
+}
+
+.captha-p{
+font-size: 8px;
+line-height: 0ch;
+margin-top: 0%;
+}
+.text-btn{
+text-decoration: none;
+color: #fff;
+}
+.style-text-login{
+text-decoration: none;
+font-size: 20px;   
+color: rgb(8, 8, 8);
+}
+
+.style-text-login:hover{
+color: rgb(8, 8, 8);
+}
+
+.btn-group-dropdown{
+      border: 1px solid rgb(235, 232, 232);
+      border-radius: 5px;
+      width: 57%;
+      margin-right: 10px;
+  }
+  
+  .style-text-account{
+      text-decoration: none;
+      font-size: 20px;
+      color: orange;
+      font-weight: 400;    
+  }
+  
+  .style-text-account:hover{
+      color: orange;
+  }
+
+
+  /* --------------index page content area start---------- */
+  .content-area h1{
+    font-weight: normal;
+   }
+
+   .content-area p{
+    color: gray;
+    font-size: 18px;
+   }
+
+   .content-area h3{
+    font-size: 22px;
+    margin-bottom: 2px;
+   }
+
+   .content-area-reading p{
+    color: rgb(255, 136, 0);
+   }
+
+   .content-area-text{
+    padding: 2% 0%;
+    border-bottom: 1px solid rgb(243, 239, 239);
+   }
+  /* --------------index page content area end---------- */
+  
+ /* ----------- footer style start ------ */
+      
+ .footer-style{
+    font-size: 17px;
+    word-spacing: 8px;
+  }
+
+  .footer-style li a{
+    color: black;
+    padding-right: 20px;
+  }
+
+  .end-footer-style li a{
+    color: gray;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+  
+  .footer-p{
+    font-size: 14px;
+  }
+
+  /* ----------- footer style end ------ */
+    

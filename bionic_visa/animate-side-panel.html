@@ -1,0 +1,154 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Generic Sliding Panel Example</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/flatly/bootstrap.min.css">
+<style>
+  .navigation-slide {
+    width: 320px;
+    color: #fff;
+    background-color: #C0392B;
+    overflow: hidden !important;
+    z-index: 150000;
+    box-shadow: 8px 0 8px -10px #000000,-8px 0 8px -10px #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1999999999;
+    text-align: left;
+    pointer-events: auto;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+    .navigation-slide .ns-header {
+        padding: 0 2rem .75rem;
+        display: flex;
+        align-items: center;
+    }
+
+        .navigation-slide .ns-header .ns-header-title {
+            color: #6f676c;
+            width: 100%;
+            text-align: center;
+        }
+
+    .navigation-slide .ns-header .ns-exit {
+        border: none;
+        background: none;
+    }
+
+.navigation-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgba(34,32,32,.7);
+    z-index: 298;
+    cursor: pointer;
+}
+
+    .is-visible {
+        visibility: visible;
+    }
+
+    .is-hidden {
+        display: none;
+    }
+    .content { padding: 1rem; }
+    .container { margin: 70px auto; }
+  </style>
+</head>
+
+<body>
+  <div class="container"><h1>Generic Sliding Panel Example</h1>
+    <div id="carbon-block" class="mt-3 mb-3"></div>
+<div class="mt-3 mb-3"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+    <p class="lead">This examples shows how to create an app-like off-canvas site navigation with the Sliding Panel plugin.</p>
+    <button class="btn btn-info" id="ns-product-toggle">Launch The Side Menu</button>
+  </div>
+  <section id="example" class="navigation-slide">
+    <div class="content">
+    <h2 class="ns-header-title">Side Logo</h2>
+    <ul>
+  <li>jQueryScript</li>
+  <li>CSSScript</li>
+  <li>VueScript</li>
+</ul>
+        <button class="ns-exit btn btn-primary">Close
+        </button>
+      </div>
+    </div>
+</section>
+<div class="navigation-overlay"></div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="src/SlidePanel.js"></script>
+<script>
+  var menu = $('.navigation-slide').SlidePanel({
+            place: 'left',
+            exit_selector: '.ns-exit',
+            toggle: '#ns-product-toggle',
+            no_scroll: true,
+            body_slide: false,
+            auto_close: true,
+            onSlideOpening: function () {
+                // Displays the overlay for UI stuffs.
+                $(".navigation-overlay").removeClass("is-hidden").addClass("is-visible");
+            }, onSlideClosing: function () {
+                // Hides the overlay for UI stuffs.
+                $(".navigation-overlay").removeClass("is-visible").addClass("is-hidden");
+            }
+        });
+
+        menu.activate();
+      </script>
+      <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+</html>

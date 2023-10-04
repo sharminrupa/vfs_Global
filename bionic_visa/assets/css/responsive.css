@@ -1,0 +1,168 @@
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) { 
+    
+    
+    
+}
+/* Large device (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) 
+ { 
+	 .filter-icons ul li a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #b6c0c1;
+    color: #fff;
+    margin-right: 6px;
+    text-align: center;
+    transition: 5s;
+}
+	 
+	 .filter-icons ul li a i{
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 20px;
+}
+     
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	
+	.update ul li,
+.filter-icons ul li {
+    margin-top: 8px;
+    list-style: none;
+    float: left;
+	font-size: 12px;}
+	
+		
+	 .filter-icons ul li a{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #b6c0c1;
+    color: #fff;
+    margin-right: 5px;
+    text-align: center;
+    transition: 5s;
+}
+	 
+	 .filter-icons ul li a i{
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 14px;
+}
+	
+	.offer-list ul li{
+    list-style: none;
+    float: left;    
+    margin-right: 20px;
+}
+
+     .offer-list ul li a{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;    
+    font-size: 35px;
+    text-align: center;
+    border: 2px solid #9eadae;    
+    color: #9dacad;
+}
+
+	.offer-list ul li a i{
+    display: inline-block;
+    padding-top: 15px;
+}
+
+     
+    }
+    
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.update ul li,
+.filter-icons ul li {
+    margin-top: 8px;
+    list-style: none;
+    float: left;
+	font-size: 10px;
+}
+
+	
+	.filter-icons ul li a{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #b6c0c1;
+    color: #fff;
+    margin-right: 3px;
+    text-align: center;
+    transition: 5s;
+}
+	
+	.filter-icons ul li a i{
+    display: inline-block;
+    padding-top: 1px;
+    font-size: 10px;
+}
+
+
+
+.offer-list ul li{
+    list-style: none;
+    float: left;    
+    margin-right: 20px;
+}
+
+     .offer-list ul li a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;    
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid #9eadae;    
+    color: #9dacad;
+}
+
+	.offer-list ul li a i{
+    display: inline-block;
+    padding-top: 16px;
+}
+	
+	
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media  (max-width: 575.98px)
+{
+	.offer-list ul li{
+    list-style: none;
+    float: left;    
+    margin-right: 20px;
+}
+
+     .offer-list ul li a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;    
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #9eadae;    
+    color: #9dacad;
+}
+
+	.offer-list ul li a i{
+    display: inline-block;
+    padding-top: 13px;
+}
+
+
+  }
